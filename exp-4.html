@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body align="center">
+    <h1>HOTEL ROOM BOOKING FORM</h1>
+
+    <form action="#" method="post">
+        <!-- there is also a tag called get in place of post  -->
+        <!-- full name tag in name attribute is for the backend to identify the data and store it in database or send it to email. -->
+        <div>        
+        <label for="full name">Full Name:</label>
+        <input type="text" id="full name" name="fullName" required placeholder="Enter your full name">
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Enter your email">
+        <br>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required placeholder="Enter your phone number">
+        <br>
+        <br>
+        <!-- checkin date -->
+        <label for="chekin">Check-in Date:</label>
+        <input type="date" id="chekin" required>
+        <br>
+        <br>
+        <!-- checkout date -->
+        <label for="chekout">Check-out Date:</label>
+        <input type="date" id="chekout" required>
+        <br>
+        <br>
+        <!-- type of room -->
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" required>
+            <option value="">Single Room</option>
+            <option value="single">Double Room</option>
+            <option value="double">Deluxe Room</option>
+            <option value="suite">Suite</option>
+        </select>
+        <br>
+        <br>
+        <!-- number of guests -->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" required min="1" max="10">
+        <br>
+        <br>
+        <label for="specialrequests">Special Requests:</label>
+        <br>
+        <textarea id="specialrequests" name="specialrequests" placeholder="Enter any special requests" rows="4"
+            cols="50"></textarea>
+        <!-- reset and submit buttons -->
+         <br>
+         <br>
+        <input type="submit" value="Submit Now">
+        <br>
+        <br>
+        <input type="reset" value="Reset now">
+        </div>
+    </form>
+
+</body>
+
+</html>
